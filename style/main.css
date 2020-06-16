@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Classes */
+
+  /* Head */
+
+  .socialIconHead{
+    height: 20px;
+  }
+
+  .contactIconHead{
+    height: 20px;
+
+  }
+
+  .logoBox{
+    display: inline-block;
+    float: left;
+    margin: 0 auto;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 20px;
+
+  }
+  .iconsBox{
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .img-wrap{
+    float:left;
+    width:20%;
+  }
+
+  .desc{
+    float:right;
+    width:75%;
+  }
+
+  .clear{
+  clear:both;
+  }
+
+
+/* ID's */
+
+  /* Re-Use */
+
+#Head{
+    width: 100%;
+    height: 6em;
+    min-height: 70px;
+    text-align: center;
+
+  }
+
+/* Nav Bar */
+#Nav{
+  width: 100%;
+  height: 60px;
+  background-color: #d5d5d5;
+}
+
+#navLinks{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d5d5d5;
+}
+
+#navLinks li{
+  display: inline;
+  float: left;
+}
+
+#navLinks li a{
+  display: block;
+  padding: 20px 15px;
+  background-color: #d5d5d5;
+  text-align: center;
+}
+
+#navLinks li a:hover{
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+#Footer {
+  border: 1px solid black;
+  width: 100%;
+  height: 10em;
+}
+
+/* HomePage */
+
+#Carousel{
+  border: 1px solid black;
+  width: 100%;
+  height: 20em;
+}
+
+#frontPageMain{
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: 20em;
+}
+
+#Price{
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: 20em;
+}
+
+#Map{
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: 10em;
+}
+
+#homeContact{
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: 10em;
+}
+
+#homeTerms{
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: 10em;
+}
