@@ -11,6 +11,9 @@ a{
   color: inherit;
 }
 
+#navLinksDrop{
+  display: none;
+}
 /* Classes */
 
   /* Head */
@@ -58,6 +61,13 @@ a{
   clear:both;
   }
 
+  /* Nav */
+
+  .table {
+  	display: table;
+  	margin: 0 auto;
+  }
+
 
 /* ID's */
 
@@ -93,15 +103,19 @@ a{
 
 #navLinks li a{
   display: block;
-  padding: 20px 15px;
-  background-color: #d5d5d5;
+  padding: 21px 18px;
   text-align: center;
 }
 
-#navLinks li a:hover{
-  background-color: #4CAF50;
+.active {
+  background-color: #76be24;
+}
+
+#navLinks li a:hover:not(.active){
+  background-color: #76be24;
   color: white;
 }
+
 
 
 
@@ -114,7 +128,6 @@ a{
 /* HomePage */
 
 #Carousel{
-  border: 1px solid black;
   width: 100%;
   height: 20em;
 }
@@ -152,4 +165,34 @@ a{
   border: 1px solid black;
   width: 100%;
   height: 10em;
+}
+
+
+/* PHONE CSS */
+
+@media only screen and (max-width: 600px) {
+
+  #Head{
+    height:100px;
+    overflow: hidden:
+  }
+  .iconsBox{
+    display:block;
+    float:left;
+    text-align: center;
+  }
+
+
+  #Nav{
+    width: 100%;
+    height: 30px;
+  }
+
+  #navLinks{
+    display: none;
+  }
+
+  #navLinksDrop{
+    display: block;
+  }
 }
