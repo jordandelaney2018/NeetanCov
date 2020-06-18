@@ -10,134 +10,145 @@
 
 
     <link rel="stylesheet" href="style/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
   </head>
 
   <body>
-    <!-- Head -->
-    <div id = "Head">
-        <div class = "logoBox">
-            <!-- Logo -->
-            <a href="home.html">
-              <img src ="Media/Logo.png" alt="Logo" />
-            </a>
+<!-- Main Window -->
+    <div class="call-too-action">
+      <!-- Nav -->
+      <div id = "Nav">
+        <div class ="table">
+          <ul id ="navLinks">
+            <li><a class ="active" href="default.asp">Home</a></li>
+            <li><a href="news.asp">About Us</a></li>
+            <li><a href="contact.asp">Services</a></li>
+            <li><a href="about.asp">Pricing</a></li>
+            <li><a href="about.asp">Contact</a></li>
+          </ul>
         </div>
-
-        <div class = "iconsBox">
-            <!-- Social Icons -->
-            <a href="">
-              <img class ="socialIconHead" src="Media/facebook.png" alt="Facebook" />
-            </a>
-            <a href="">
-              <img class ="socialIconHead" src="Media/Insta.png" alt="Insta" />
-            </a>
-        </div>
-
-        <div class = "iconsBox">
-            <!-- Contact Icons -->
-            <div class="img-wrap">
-              <img class ="contactIconHead" src="Media/mail.png" alt="Insta" />
-            </div>
-
-            <div class="desc">
-              <a href="">
-                <p> info@coventryhealthclinic.co.uk </p>
-              </a>
-            </div>
-
-            <div class="clear"></div>
-        </div>
-
-        <div class = "iconsBox">
-            <div class="img-wrap">
-              <img class ="contactIconHead" src="Media/phone.png" alt="Insta" />
-            </div>
-
-            <div class="desc">
-              <p> 02476411643 </p>
-            </div>
-              <div class="clear"></div>
-        </div>
-
     </div>
 
-    <!-- Nav -->
-    <div id = "Nav">
-
-      <div class ="table">
-
-        <ul id ="navLinks">
-          <li><a class ="active" href="default.asp">Home</a></li>
-          <li><a href="news.asp">About Us</a></li>
-          <li><a href="contact.asp">Services</a></li>
-          <li><a href="about.asp">Pricing</a></li>
-          <li><a href="about.asp">Travel Clinic</a></li>
-          <li><a href="about.asp">Buisness Vacinations</a></li>
-          <li><a href="about.asp">Testimonials</a></li>
-          <li><a href="about.asp">Contact</a></li>
-        </ul>
-      </div>
-    <div class ="table">
-        <select id ="navLinksDrop">
-          <option value="" selected="selected">Select</option> =
-          <option value="/">Home</option>
-          <option value="/collections/all">Books</option>
-          <option value="/blogs/five-simple-steps-blog">Blog</option>
-          <option value="/pages/about-us">About Us</option>
-          <option value="/pages/support">Support</option>
-        </select>
-
+   <!-- Call To action -->
+      <div class="call-too-action-title">
+           Coventry Health Clinic
       </div>
 
+      <div class ="call-too-action-text">
+          Blah Blah Blah
+      </div>
+
+      <div class="buttonBox">
+        <button class="button-green">
+          Find Out More
+        </button>
+      </div>
+
+</div>
+
+
+<!-- About -->
+<main id = "aboutUS">
+
+     <div class="call-too-action-title">
+            About us
+     </div>
+
+    <div class ="call-too-action-text">
+           Blah Blah Blah
     </div>
 
-    <!-- Carousel -->
-    <div id = "Carousel">
+   <div class="buttonBox">
+       <button class="button-white" id="aboutUsButton">
+           Find Out More
+       </button>
+   </div>
 
-      <h1> Im the Carousel </h1>
+  </main>
+
+<div id = "about-extra">
+
+    <div class="ptext">
+         More info
+    </div>
+
+    <div class ="call-too-action-text">
+        Blah Blah Blah
+    </div>
+
+</div>
+
+  <!-- Services -->
+<div id = "services">
+
+  <div id="services-container">
+
+    <div id="services-options">
+      <ul id=services-list>
+        <li id="serviceOne" class="active"><a href="#a" data-toggle="tab">Travel Health Clinic</a></li>
+        <li id="serviceTwo" class=""><a href="#b" data-toggle="tab">Immunisation Clinic</a></li>
+        <li class=""><a href="#c" data-toggle="tab">Business Vaccinations</a></li>
+        <li class=""><a href="#d" data-toggle="tab">Occupational Health Vaccinations</a></li>
+        <li class=""><a href="#e" data-toggle="tab">Mobile vaccinations</a></li>
+        <li class=""><a href="#f" data-toggle="tab">Buy Over-The-Counter Medicines</a></li>
+      </ul>
+    </div>
+
+    <div id="services-text">
+      <div class="tab-content col-md-9">
+          <div class="tab-pane" id="a">Access the best prices for a full range of travel
+              vaccinations including Hepatitis, Tetanus, Typhoid, Rabies, Japanese encephalitis,
+              malaria tablets and more
+              Book in for last minute appointments including on the day, late evenings and weekends
+              Call or email us to have a FREE telephone travel consultation</div>
+          <div class="tab-pane" id="b">Access various immunisations at our private clinic
+              Chicken Pox vaccination available for patients over 1 year old requiring two injections
+              over 8 weeks
+              HPV vaccination available with 3 injections given over 6 months with discounts available
+              when you purchase all 3 injections together
+              Access vaccinations for Shingles, Pneumococcal and Flu</div>
+          <div class="tab-pane" id="c">We offer vaccinations for businesses allowing you to protect
+              your employees with the flu jab and various travel vaccinations
+              Our pharmacist can travel to your workplace and vaccinate your employees offering you
+              ease and convenience </div>
+          <div class="tab-pane" id="d">We offer occupational health vaccinations with Hepatitis B
+              vaccination
+              We can provide your employees with a standard, accelerated or rapid vaccine schedule to
+              help meet their protection needs</div>
+          <div class="tab-pane" id="e">We offer an exclusive mobile vaccinations service
+              Our pharmacist can travel to you and vaccinate you! Have your vaccinations in
+              convenience and comfort.</div>
+          <div class="tab-pane" id="f">You can purchase pharmacy medicines online safely with our
+              partners MyDrugs Online Pharmacy</div>
 
     </div>
 
-    <!-- Main -->
-    <main id = "frontPageMain">
+  </div>
 
-      <h1> Im the Main Content </h1>
-
-    </main>
-
-    <!-- Price -->
-    <div id = "Price">
-
-      <h1> Im the bit about prices </h1>
-
-    </div>
-
-    <!-- Map -->
-    <div id = "Map">
-
-      <h1> Ill have a map one day </h1>
-
-    </div>
+</div>
 
     <!-- Contact -->
     <div id = "homeContact">
 
-      <h1> Ill be contact info </h1>
+
 
     </div>
 
     <!-- Terms -->
     <div id = "homeTerms">
 
-      <h1> Ill have Terms </h1>
+
 
     </div>
 
     <!-- Footer -->
     <div id ="Footer">
-      <h1> Im the footer</h1>
+
 
     </div>
 
   </body>
+  <script src="scripts.js"></script>
 </html>
