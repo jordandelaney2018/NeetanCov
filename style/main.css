@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Montserrat:wght@700&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -47,28 +47,38 @@ a{
     min-height: 700px;
   }
 
-  .call-too-action-title{
+  .main-title{
     position:absolute;
     color: rgb(217, 207, 207);
     top:30%;
     width: 100%;
     text-align: center;
-    font-size: 32px;
+    font-size: 42px;
     letter-spacing: 2px;
    }
 
-   .call-too-action-text{
+   .main-text{
      position:absolute;
      color: rgb(217, 207, 207);
      top:45%;
      width: 100%;
      text-align: center;
-     font-size: 18px;
+     font-size: 20px;
+   }
+
+   .main-paragraph{
+     font-family: 'Hind', sans-serif;
+     position:absolute;
+     color: rgb(217, 207, 207);
+     top:45%;
+     width: 100%;
+     text-align: center;
+     font-size: 16px;
    }
 
    .buttonBox{
      position:absolute;
-     top:60%;
+     top:80%;
      width: 100%;
      text-align: center;
    }
@@ -108,6 +118,9 @@ a{
 #Nav{
   width: 100%;
   height: 60px;
+  position: fixed;
+  transition: background-color 0.5s;
+  z-index: 99;
 }
 
 #navLinks{
@@ -147,6 +160,7 @@ a{
 }
 
 #about-extra{
+  display: none;
   position: relative;
   border: 1px solid black;
   width: 100%;
@@ -158,22 +172,31 @@ a{
 
 #services{
   position: relative;
-  border: 1px solid black;
   width: 100%;
   height: 30em;
   padding: 50px 0 0 0;
 }
 
+#services-title{
+  position:absolute;
+  color: black;
+  top:10%;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
 #services-container{
-  border: 1px solid black;
+  position:absolute;
+  top:30%;
   width: 80%;
-  height: 90%;
+  text-align: center;
   margin: 0 auto;
   padding: 0;
 }
 
 #services-options{
-  border: 1px solid black;
   height:100%;
   width: 30%;
   margin: 0;
@@ -189,6 +212,7 @@ a{
 .tab-pane{
   background-color: white;
   position:absolute;
+  height: 100%;
 }
 
 #services-text{
@@ -200,29 +224,81 @@ a{
   float: left;
 }
 
+#0{
+  z-index: 99;
 
-
-
-
-#homeContact{
-  position: relative;
-  border: 1px solid black;
-  width: 100%;
-  height: 10em;
 }
 
-#homeTerms{
-  position: relative;
-  border: 1px solid black;
-  width: 100%;
-  height: 10em;
+#1 #2 #3 #4 #5 {
+  z-index: -99;
+
 }
 
 
-#Footer {
+
+/* Prices */
+
+#prices{
+  position: relative;
+  width: 100%;
+  height: 30em;
+  background-color: #72ad33;
+}
+
+#price-extra{
+  display:none;
+  position: relative;
   border: 1px solid black;
   width: 100%;
-  height: 10em;
+  height: 20em;
+  transition: 2s;
+}
+
+
+
+/* Drop Section */
+
+#dropSectionHolder{
+  position: relative;
+  width: 100%;
+  height: 30em;
+}
+
+#travel-clinic{
+  position: relative;
+  border: 1px solid black;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+#buisness-vaccinations{
+  position: relative;
+  border: 1px solid black;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+#drop-extra{
+  display:none;
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: 20em;
+  transition: 2s;
+}
+
+
+/* Footer Section */
+
+#contact {
+  background-color: #424242;
+  border: 1px solid black;
+  width: 100%;
+  height: 30em;
 }
 
 /* PHONE CSS */

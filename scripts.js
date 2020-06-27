@@ -1,3 +1,6 @@
+
+
+// Hide and Show info Function
 document.getElementById("aboutUsButton").onclick = function() {
     divTest = document.getElementById("about-extra");
     if (divTest.style.display === "none") {
@@ -8,63 +11,58 @@ document.getElementById("aboutUsButton").onclick = function() {
     }
 }
 
+document.getElementById("pricesButton").onclick = function() {
+    divTest = document.getElementById("drop-extra");
+    if (divTest.style.display === "none") {
+        divTest.style.display = 'block';
+    }
+    else {
+        divTest.style.display = "none";
+    }
+}
 
-$(document).ready(function(){
-    $("#serviceOne").click(function(){
-        //Find Width of Participants monitor
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth);
-        // Emulating the lower resolution and size of older monitors by setting the width of the layout to be different sizes
-        // However if you use is already using a smaller screen then set the width to be 100%
-        if ( w >= 1000){
-            document.getElementById("a").style.width ="50%";
-        }
-        else{
-            document.getElementById("a").style.width ="100%";
-        }
-        document.getElementById("a").style.zIndex ="1";
-        document.getElementById("b").style.zIndex ="-99";
-        document.getElementById("c").style.zIndex ="-99";
-        document.getElementById("d").style.zIndex ="-99";
-        document.getElementById("e").style.zIndex ="-99";
-        document.getElementById("f").style.zIndex ="-99";
+document.getElementById("travelButton").onclick = function() {
+    divTest = document.getElementById("drop-extra");
+    if (divTest.style.display === "none") {
+        divTest.style.display = 'block';
+    }
+    else {
+        divTest.style.display = "none";
+    }
+}
 
-        document.getElementById("b").removeClass("active");
-        document.getElementById("c").removeClass("active");
-        document.getElementById("d").removeClass("active");
-        document.getElementById("e").removeClass("active");
-        document.getElementById("f").removeClass("active");
+document.getElementById("buinssnessButton").onclick = function() {
+    divTest = document.getElementById("drop-extra");
+    if (divTest.style.display === "none") {
+        divTest.style.display = 'block';
+    }
+    else {
+        divTest.style.display = "none";
+    }
+}
 
-        document.getElementById("a").addClass("active");
-    });
-});
+// Change on scroll Function
+window.onscroll = function() {scrollFunction()};
 
-$(document).ready(function(){
-    $("#serviceTwo").click(function(){
-        //Find Width of Participants monitor
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth);
-        // Emulating the lower resolution and size of older monitors by setting the width of the layout to be different sizes
-        // However if you use is already using a smaller screen then set the width to be 100%
-        if ( w >= 1000){
-            document.getElementById("b").style.width ="50%";
-        }
-        else{
-            document.getElementById("b").style.width ="100%";
-        }
-        document.getElementById("b").style.zIndex ="1";
-        document.getElementById("a").style.zIndex ="-99";
-        document.getElementById("c").style.zIndex ="-99";
-        document.getElementById("d").style.zIndex ="-99";
-        document.getElementById("e").style.zIndex ="-99";
-        document.getElementById("f").style.zIndex ="-99";
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("Nav").style.backgroundColor = "white";
+  } else {
+    document.getElementById("Nav").style.backgroundColor = "";
+  }
+}
 
-        document.getElementById("a").removeClass("active");
-        document.getElementById("c").removeClass("active");
-        document.getElementById("d").removeClass("active");
-        document.getElementById("e").removeClass("active");
-        document.getElementById("f").removeClass("active");
+// Services Section
+$('#services-list li').click(function(e) {
+  e.preventDefault();
+  var divID = $(this).data('id');
+  console.log(divID);
 
-        document.getElementById("b").addClass("active");
+  $(this).attr('style', 'color: #72ad33 !important');
+  $(this).siblings().attr( 'style', 'color: black !important');
+
+  $('#' + divID).attr('style', 'z-index: 99 !important');
+  $('#' + divID).siblings().attr('style', 'z-index: -1 !important');
 
 
-    });
 });

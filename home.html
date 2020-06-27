@@ -17,7 +17,6 @@
 
   <body>
 <!-- Main Window -->
-    <div class="call-too-action">
       <!-- Nav -->
       <div id = "Nav">
         <div class ="table">
@@ -29,98 +28,104 @@
             <li><a href="about.asp">Contact</a></li>
           </ul>
         </div>
+      </div>
+
+    <div class="call-too-action">
+     <!-- Call To action -->
+        <div class="main-title">
+             Coventry Health Clinic
+        </div>
+
+        <div class ="main-text">
+            Blah Blah Blah
+        </div>
+
+        <div class="buttonBox">
+          <button class="button-green">
+            Find Out More
+          </button>
+        </div>
+
     </div>
-
-   <!-- Call To action -->
-      <div class="call-too-action-title">
-           Coventry Health Clinic
-      </div>
-
-      <div class ="call-too-action-text">
-          Blah Blah Blah
-      </div>
-
-      <div class="buttonBox">
-        <button class="button-green">
-          Find Out More
-        </button>
-      </div>
-
-</div>
 
 
 <!-- About -->
-<main id = "aboutUS">
+  <main id = "aboutUS">
 
-     <div class="call-too-action-title">
-            About us
+       <div class="main-title">
+              About us
+       </div>
+
+      <div class ="main-paragraph">
+             Coventry Health & Travel Clinic is an independent private run pharmacy <br />
+             providing travel services and immunisations. We are pharmacist operated <br />
+             in a family run clinic providing an alternative route of access to travel <br />
+             jabs and immunisations in a residential surrounding away from busy town centres <br />
+      </div>
+
+     <div class="buttonBox">
+         <button type="button" class="button-white" id="aboutUsButton">
+             Find Out More
+         </button>
      </div>
 
-    <div class ="call-too-action-text">
-           Blah Blah Blah
-    </div>
+    </main>
 
-   <div class="buttonBox">
-       <button class="button-white" id="aboutUsButton">
-           Find Out More
-       </button>
-   </div>
+  <div id = "about-extra">
 
-  </main>
+      <div class="ptext">
+           More info
+      </div>
 
-<div id = "about-extra">
+      <div class ="main-text">
+          Blah Blah Blah
+      </div>
 
-    <div class="ptext">
-         More info
-    </div>
+  </div>
 
-    <div class ="call-too-action-text">
-        Blah Blah Blah
-    </div>
-
-</div>
-
-  <!-- Services -->
+<!-- Services -->
 <div id = "services">
+  <div id="services-title">
+         Services
+  </div>
 
   <div id="services-container">
-
     <div id="services-options">
-      <ul id=services-list>
-        <li id="serviceOne" class="active"><a href="#a" data-toggle="tab">Travel Health Clinic</a></li>
-        <li id="serviceTwo" class=""><a href="#b" data-toggle="tab">Immunisation Clinic</a></li>
-        <li class=""><a href="#c" data-toggle="tab">Business Vaccinations</a></li>
-        <li class=""><a href="#d" data-toggle="tab">Occupational Health Vaccinations</a></li>
-        <li class=""><a href="#e" data-toggle="tab">Mobile vaccinations</a></li>
-        <li class=""><a href="#f" data-toggle="tab">Buy Over-The-Counter Medicines</a></li>
+      <ul id="services-list">
+        <li data-id='0' id="serviceOne" class="active"><a href="#a" data-toggle="tab">Travel Health Clinic</a></li>
+        <li data-id='1' id="serviceTwo" ><a href="#b" data-toggle="tab">Immunisation Clinic</a></li>
+        <li data-id='2' id="serviceThree" ><a href="#c" data-toggle="tab">Business Vaccinations</a></li>
+        <li data-id='3' id="serviceFour" ><a href="#d" data-toggle="tab">Occupational Health Vaccinations</a></li>
+        <li data-id='4' id="serviceFive" ><a href="#e" data-toggle="tab">Mobile vaccinations</a></li>
+        <li data-id='5' id="serviceSix"><a href="#f" data-toggle="tab">Buy Over-The-Counter Medicines</a></li>
       </ul>
     </div>
 
     <div id="services-text">
       <div class="tab-content col-md-9">
-          <div class="tab-pane" id="a">Access the best prices for a full range of travel
+          <div class="tab-pane" id="0">Access the best prices for a full range of travel
               vaccinations including Hepatitis, Tetanus, Typhoid, Rabies, Japanese encephalitis,
               malaria tablets and more
               Book in for last minute appointments including on the day, late evenings and weekends
               Call or email us to have a FREE telephone travel consultation</div>
-          <div class="tab-pane" id="b">Access various immunisations at our private clinic
+          <div class="tab-pane" id="1">Access various immunisations at our private clinic
               Chicken Pox vaccination available for patients over 1 year old requiring two injections
               over 8 weeks
               HPV vaccination available with 3 injections given over 6 months with discounts available
               when you purchase all 3 injections together
               Access vaccinations for Shingles, Pneumococcal and Flu</div>
-          <div class="tab-pane" id="c">We offer vaccinations for businesses allowing you to protect
+          <div class="tab-pane" id="2">We offer vaccinations for businesses allowing you to protect
               your employees with the flu jab and various travel vaccinations
               Our pharmacist can travel to your workplace and vaccinate your employees offering you
               ease and convenience </div>
-          <div class="tab-pane" id="d">We offer occupational health vaccinations with Hepatitis B
+          <div class="tab-pane" id="3">We offer occupational health vaccinations with Hepatitis B
               vaccination
               We can provide your employees with a standard, accelerated or rapid vaccine schedule to
               help meet their protection needs</div>
-          <div class="tab-pane" id="e">We offer an exclusive mobile vaccinations service
+          <div class="tab-pane" id="4">We offer an exclusive mobile vaccinations service
               Our pharmacist can travel to you and vaccinate you! Have your vaccinations in
               convenience and comfort.</div>
-          <div class="tab-pane" id="f">You can purchase pharmacy medicines online safely with our
+          <div class="tab-pane" class="5">You can purchase pharmacy medicines online safely with our
               partners MyDrugs Online Pharmacy</div>
 
     </div>
@@ -128,27 +133,88 @@
   </div>
 
 </div>
-
-    <!-- Contact -->
-    <div id = "homeContact">
+</div>
 
 
-
+<!-- prices -->
+<div id = "prices">
+    <div class="main-title">
+             Prices
     </div>
 
-    <!-- Terms -->
-    <div id = "homeTerms">
+     <div class ="main-text">
+            Blah Blah Blah
+     </div>
 
+     <div class="buttonBox">
+        <button type="button" class="button-white" id="pricesButton">
+            Find Out More
+        </button>
+     </div>
 
+     </main>
 
+</div>
+
+<div id = "price-extra">
+
+  <div class="ptext">
+       More info
+  </div>
+
+  <div class ="main-text">
+      Blah Blah Blah
+  </div>
+
+</div>
+
+<!-- Drop Section -->
+<div id="dropSectionHolder">
+
+    <!-- Travel Clinic -->
+    <div id = "travel-clinic">
+
+      <div class="main-title">
+               Travel Clinic
+      </div>
+
+      <div class="buttonBox">
+         <button type="button" class="button-green" id="travelButton">
+             Find Out More
+         </button>
+
+      </div>
     </div>
 
-    <!-- Footer -->
-    <div id ="Footer">
+    <!-- Buinsess Vaccinations -->
+    <div id ="buisness-vaccinations">
 
+      <div class="main-title">
+               Buinsess Vaccinations
+      </div>
 
+      <div class="buttonBox">
+         <button type="button" class="button-green" id="buinssnessButton">
+             Find Out More
+         </button>
+
+      </div>
     </div>
 
-  </body>
-  <script src="scripts.js"></script>
+</div>
+
+<div id = "drop-extra">
+  hi
+
+
+</div>
+
+<footer id="contact">
+
+</footer>
+
+</body>
+
+<script src="scripts.js"></script>
+
 </html>
