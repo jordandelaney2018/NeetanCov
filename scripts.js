@@ -3,41 +3,41 @@
 // Hide and Show info Function
 document.getElementById("aboutUsButton").onclick = function() {
     divTest = document.getElementById("about-extra");
-    if (divTest.style.display === "none") {
-        divTest.style.display = 'block';
+    if (divTest.style.display === "block") {
+        divTest.style.display = 'none';
     }
     else {
-        divTest.style.display = "none";
+        divTest.style.display = "block";
     }
 }
 
 document.getElementById("pricesButton").onclick = function() {
-    divTest = document.getElementById("drop-extra");
-    if (divTest.style.display === "none") {
-        divTest.style.display = 'block';
+    divTest = document.getElementById("price-extra");
+    if (divTest.style.display === "block") {
+        divTest.style.display = 'none';
     }
     else {
-        divTest.style.display = "none";
+        divTest.style.display = "block";
     }
 }
 
 document.getElementById("travelButton").onclick = function() {
     divTest = document.getElementById("drop-extra");
-    if (divTest.style.display === "none") {
-        divTest.style.display = 'block';
+    if (divTest.style.display === "block") {
+        divTest.style.display = 'none';
     }
     else {
-        divTest.style.display = "none";
+        divTest.style.display = "block";
     }
 }
 
 document.getElementById("buinssnessButton").onclick = function() {
     divTest = document.getElementById("drop-extra");
-    if (divTest.style.display === "none") {
-        divTest.style.display = 'block';
+    if (divTest.style.display === "block") {
+        divTest.style.display = 'none';
     }
     else {
-        divTest.style.display = "none";
+        divTest.style.display = "block";
     }
 }
 
@@ -52,6 +52,14 @@ function scrollFunction() {
   }
 }
 
+// Close drop sections
+$('.closeButton').click(function(e) {
+  e.preventDefault();
+console.log("this worked");
+  $('#about-extra').attr('style', 'display: none !important');
+
+
+});
 // Services Section
 $('#services-list li').click(function(e) {
   e.preventDefault();

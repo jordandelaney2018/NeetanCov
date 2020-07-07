@@ -21,11 +21,11 @@
       <div id = "Nav">
         <div class ="table">
           <ul id ="navLinks">
-            <li><a class ="active" href="default.asp">Home</a></li>
-            <li><a href="news.asp">About Us</a></li>
-            <li><a href="contact.asp">Services</a></li>
-            <li><a href="about.asp">Pricing</a></li>
-            <li><a href="about.asp">Contact</a></li>
+            <li><a class ="active" href="#top">Home</a></li>
+            <li><a href="#aboutUS">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#prices">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -50,7 +50,7 @@
 
 
 <!-- About -->
-  <main id = "aboutUS">
+  <main id="aboutUS">
 
        <div class="main-title">
               About us
@@ -70,27 +70,82 @@
      </div>
 
     </main>
-
+<!-- Drop Section -->
   <div id = "about-extra">
 
-      <div class="ptext">
-           More info
+    <div id="aboutMain" class ="drop-paragraph">
+
+      <div class="dropHeading">
+
+        <h2>We pride ourselves on our personal touch, flexible appointment availability and competitive prices</h2><br />
+
+        <p>Our aim is to innovate and simply bring patients a completely different model of private pharmacy care providing overall
+        better health care access.</p>
+
+        <img class="closeButton" src="style\Media\close.png" alt="close" />
       </div>
 
-      <div class ="main-text">
-          Blah Blah Blah
+      <div class="dropText">
+
+        <h2>Private Pharmacy</h2>
+        <p>
+          Pharmaceutical Council (GPHC). Our pharmacy license is 9011027 and our license details
+          can be found with GPHC on www.pharmacyregulation.org <br />
+        </p><br />
+
+        <h3>Regulated Services</h3>
+        <p>
+          We provide services that are authorised by Patient Group Directions (PGDs) which are signed instructions from registered doctors.
+          Our PGDs are provided by the Pharmadoctor and regulated by the Care Quality Commission (CQC).<br />
+        </p><br />
+
+
+        <h3>Superintendent Pharmacist </h3>
+        <p>
+          Our services are provided by a registered pharmacists who are authorised to prescribe and administer medication by completing regular
+          training and following patient group directions.
+          Our superintendent pharmacist is Karandeep Briah (MPharm, MRPharmS).<br />
+        </p><br />
+
+        <div class="dropList">
+          <h3>Why us?</h3>
+          <ul id="whyUsList">
+            <li>
+              Competitive prices <br />
+              We want to offer you the best price possible to help keep your costs down
+            </li>
+            <li>
+              Flexibility <br />
+              We cater for last minute vaccinations, late evening, early morning and weekend appointments
+
+            </li>
+            <li>
+              Convenience <br />
+              Away from the hustle and bustle, park on our drive for free and enjoy no waiting
+              room as you walk straight into our private consultation room for your dedicated appointment time.
+            </li>
+            <li>
+              Personalised <br />
+              We look to cater to your individual needs. Call and speak to our pharmacist for your free telephone consultation
+            </li>
+          </ul>
+        </div>
+
       </div>
+
+
+    </div>
 
   </div>
 
 <!-- Services -->
 <div id = "services">
-  <div id="services-title">
-         Services
-  </div>
-
   <div id="services-container">
     <div id="services-options">
+      <div id="services-title">
+             Services
+             <hr class="underline-green">
+      </div>
       <ul id="services-list">
         <li data-id='0' id="serviceOne" class="active"><a href="#a" data-toggle="tab">Travel Health Clinic</a></li>
         <li data-id='1' id="serviceTwo" ><a href="#b" data-toggle="tab">Immunisation Clinic</a></li>
@@ -103,30 +158,110 @@
 
     <div id="services-text">
       <div class="tab-content col-md-9">
-          <div class="tab-pane" id="0">Access the best prices for a full range of travel
-              vaccinations including Hepatitis, Tetanus, Typhoid, Rabies, Japanese encephalitis,
-              malaria tablets and more
-              Book in for last minute appointments including on the day, late evenings and weekends
-              Call or email us to have a FREE telephone travel consultation</div>
-          <div class="tab-pane" id="1">Access various immunisations at our private clinic
-              Chicken Pox vaccination available for patients over 1 year old requiring two injections
-              over 8 weeks
-              HPV vaccination available with 3 injections given over 6 months with discounts available
-              when you purchase all 3 injections together
-              Access vaccinations for Shingles, Pneumococcal and Flu</div>
-          <div class="tab-pane" id="2">We offer vaccinations for businesses allowing you to protect
-              your employees with the flu jab and various travel vaccinations
-              Our pharmacist can travel to your workplace and vaccinate your employees offering you
-              ease and convenience </div>
-          <div class="tab-pane" id="3">We offer occupational health vaccinations with Hepatitis B
-              vaccination
-              We can provide your employees with a standard, accelerated or rapid vaccine schedule to
-              help meet their protection needs</div>
-          <div class="tab-pane" id="4">We offer an exclusive mobile vaccinations service
-              Our pharmacist can travel to you and vaccinate you! Have your vaccinations in
-              convenience and comfort.</div>
-          <div class="tab-pane" class="5">You can purchase pharmacy medicines online safely with our
-              partners MyDrugs Online Pharmacy</div>
+
+          <div class="tab-pane" id="1">
+              <img class="services-img" src="style\Media\injection.png" />
+              <br />
+              <div class="services-desc">
+                <h3>Travel Health clinic</h3>
+                <br />
+                <hr class="underline-white">
+                <p class="services-para">
+                <br />
+                  Access various immunisations at our private clinic
+                  Chicken Pox vaccination available for patients over 1 year old requiring two injections
+                  over 8 weeks
+                  HPV vaccination available with 3 injections given over 6 months with discounts available
+                  when you purchase all 3 injections together
+                  Access vaccinations for Shingles, Pneumococcal and Flu
+                </p>
+              </div>
+          </div>
+
+          <div class="tab-pane" id="2">
+              <img class="services-img" src="style\Media\briefcase.png" />
+              <br />
+              <div class="services-desc">
+                <h3>Travel Health clinic</h3>
+                <br />
+                <hr class="underline-white">
+                <br />
+                <p class="services-para">
+                  We offer vaccinations for businesses allowing you to protect
+                  your employees with the flu jab and various travel vaccinations
+                  Our pharmacist can travel to your workplace and vaccinate your employees offering you
+                  ease and convenience
+                </p>
+              </div>
+          </div>
+
+          <div class="tab-pane" id="3">
+              <img class="services-img" src="style\Media\drugs.png" />
+              <br />
+              <div class="services-desc">
+                <h3>Travel Health clinic</h3>
+                <br />
+                <hr class="underline-white">
+                <br />
+                <p class="services-para">
+                  We offer occupational health vaccinations with Hepatitis B
+                  vaccination
+                  We can provide your employees with a standard, accelerated or rapid vaccine schedule to
+                  help meet their protection needs
+                </p>
+              </div>
+         </div>
+
+          <div class="tab-pane" id="4">
+              <img class="services-img" src="style\Media\pills.png" />
+              <br />
+              <div class="services-desc">
+                <h3>Travel Health clinic</h3>
+                <br />
+                <hr class="underline-white">
+                <br />
+                <p class="services-para">
+                  We offer an exclusive mobile vaccinations service
+                  Our pharmacist can travel to you and vaccinate you! Have your vaccinations in
+                  convenience and comfort.
+                </p>
+              </div>
+          </div>
+
+          <div class="tab-pane" id="5">
+              <img class="services-img" src="style\Media\pills.png" />
+              <br />
+              <div class="services-desc">
+                <h3>Travel Health clinic</h3>
+                <br />
+                <hr class="underline-white">
+                <br />
+                <p class="services-para">
+                  You can purchase pharmacy medicines online safely with our
+                  partners MyDrugs Online Pharmacy
+                </p>
+              </div>
+
+          </div>
+
+          <div class="tab-pane" id="0">
+              <img class="services-img" src="style\Media\pills.png" />
+              <br />
+              <div class="services-desc">
+                <h3>Travel Health clinic</h3>
+                <br />
+                <hr class="underline-white">
+                <br />
+                <p class="services-para">
+                  Access the best prices for a full range of travel
+                  vaccinations including Hepatitis, Tetanus, Typhoid, Rabies, Japanese encephalitis,
+                  malaria tablets and more
+                  Book in for last minute appointments including on the day, late evenings and weekends
+                  Call or email us to have a FREE telephone travel consultation
+                </p>
+              </div>
+          </div>
+
 
     </div>
 
